@@ -27,14 +27,23 @@ As "chaves" de criptografia utilizadas são:
 /
 ├── front-end/
 │   ├── imagem/
-│   │   ├── img_titulo.png
-│   │   └── img-resultado.svg
+│   │   ├── github.svg
+│   │   └── img-titulo.svg
+|   |   └── img_resultado.png
+|   |   └── layout-inicial.png
+|   |   └── layout-resultado.png
+|   |   └── linkedin.svg
 │   └── style.css
 ├── back-end/
 │   └── script.js
 └── index.html
 ```
 
+### Layout inicial:
+![Layout inicial](/front-end/imagem/layout-inicial.png)
+
+### Layout resultado:
+![Layout resultado](/front-end/imagem/layout-resultado.png)
 
 ## Uso
 
