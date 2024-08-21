@@ -4,23 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de texto</title>
-    <link rel="stylesheet" href="/Decodificador-de-Texto/front-end/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div class="container">
-        <div id = "direita">
-            <img src="/Decodificador-de-Texto/front-end/imagem/img_titulo.png" alt="titulo">
+        <div id = "esquerda">
+            <img src="/front-end/imagem/img_titulo.png" alt="titulo">
                 <textarea name="texto" id="input-texto" placeholder="Digite seu texto"></textarea>
+                <div class="alerta">
+                    <span class="alert-symbol">&#9888;</span>
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                </div>
             <div id = "botao">
-                <button class="botao1">Criptografar</button>
-                <button class="botao2">Descriptografar</button>
+                <button class="botao1" onclick="criptografarTexto()">Criptografar</button>
+                <button class="botao2" onclick="descriptografarTexto()">Descriptografar</button>
             </div>
         </div>
-        <div id = "esquerda"> 
-            <img src="/Decodificador-de-Texto/front-end/imagem/img-resultado.svg" alt="resultado">
-            <h2>Nenhuma imagem encontrada</h2>
-            <h5>Digite um texto que você deseja criptografar ou descriptografar.</h5>
+        <div id = "direita"> 
+            <div id="sem-resultado">
+                <img src="/front-end/imagem/img-resultado.svg" alt="resultado">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <h5>Digite um texto que você deseja criptografar ou descriptografar.</h5>
+            </div>
+           
+        <div id="resultado" class="esconder">
+            <textarea name="resultado" id="output-texto" readonly></textarea>
+            <button class="botao" onclick="copiar()">Copiar</button>
+            </div>
         </div>
+        <footer>
+            <a target="_blank" href="">
+                <img src="/front-end/imagem/linkedin.svg" class="link" alt="linkedin">
+            </a>
+            <a target="_blank" href="https://github.com/LeizaneMelo">
+                <img src="/front-end/imagem/github.svg" class="link" alt="github">
+            </a>
+            <p class="copyright">&copy; Desenvolvido por Leizane Melo | 2024</p>
+        </footer>
+    
    </div> 
+   <script src="./back-end/script.js"></script>
 </body>
 </html>

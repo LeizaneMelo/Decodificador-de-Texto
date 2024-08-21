@@ -1,20 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-#container{
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+   
+}
+
+.container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
-#direita{
-    flex: 2;
-    flex-direction: column ;
+
+#esquerda, #direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -30px;
 }
-#esquerdo{
-    flex: 1;
-    flex-direction: column ;
-}
-#direita img {
+#esquerda img {
     width: 120px;
     height: 48px;
     top: 40px;
@@ -22,61 +35,175 @@
     gap: 40px;
     opacity: 0px;
 }
+#direita img {
+    /* margin-top: 5%; */
+    width: 420px;
+    height: 348px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+    opacity: 0px;
+}
+#direita{
+    border-radius: 10px;
+    border-style: none;
+    background-color: #ece6e6;
+    height: 650px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.521);
+}
 
-#input-texto {
-    width: 680px;
-    height: 48px;
+
+#input-texto{
+    width: 560px;
+    height: 348px;
     top: 168px;
     left: 240px;
     gap: 0px;
     opacity: 0px;
-}
-
-#input-texto textarea {
-    font-family: Inter;
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
     text-align: left;
-    background: #0A3871;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    padding: 30px;
+    
+}
+::placeholder{
+    color: #0A3871;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
+.botao {
+    background: #fffdfd;
+    color: #0A3871;
+    margin: 52px 160px;
+
+}
 .botao1 {
-    width: 280px;
-    height: 45px;
-    gap: 8px;
-    border-radius: 24px;
-    opacity: 0px;
     background: #0A3871;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    border-style: none;
+    color: #f0eded;
 }
 .botao2 {
+    background: #fffdfd;
+    color: #0A3871;
+}
+
+.botao1:hover {
+    background-color: #fffdfd;
+    color: #0A3871;
+    transform: scale(1.1);
+    transition-duration: 0.9s;
+}
+.botao2:hover {
+    background-color: #0A3871;
+    color: #fffdfd;
+    transform: scale(1.1);
+    transition-duration: 0.9s;
+}
+.botao:hover {
+    background-color: #0A3871;
+    color: #fffdfd;
+    transform: scale(1.2);
+    transition-duration: 0.9s;
+}
+button{
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
     width: 280px;
     height: 45px;
     gap: 8px;
     border-radius: 24px;
     opacity: 0px;
-    background: #b9b2b2;
-    color: #0A3871;
-    font-size: 16px;
-    text-align: center;
-    border-style: none;
 }
+
+
 h2{
     font-size: 24px;
-    font-family: Inter;
     font-weight: 400;
     line-height: 48px;
     text-align: center;
+    margin: 32px 32px 32px 16px;
 }
 h5{
     font-size: 16px;
-    font-family: Inter;
     font-weight: 400;
     line-height: 48px;
     text-align: center;
     color: #343A40;
+    margin: 32px 32px 32px 16px;
+}
+.alerta {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: #343A40;
+    opacity: 0.8;
+    margin: 0 0 16px 8px;
+}
+
+.alerta img {
+    margin-bottom: -4px;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+}
+.esconder {
+    display: none;
+}
+
+#resultado textarea {
+    resize: none;
+}
+
+#output-texto{
+    width: 560px;
+    height: 348px;
+    top: 168px;
+    left: 240px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    padding: 30px;
+    
+}
+footer {
+    text-align: center;
+    color: #FFFFFF;
+    background: #0A3871;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: auto;
+
+}
+
+.link {
+    height: 20px;
+    margin: 10px 5px 10px 5px;
+}
+
+.link:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+.alert-symbol {
+    font-size: 14px;
+    color: #0A3871;
+    margin-right: 10px;
 }
