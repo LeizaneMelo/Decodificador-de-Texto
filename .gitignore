@@ -1,1 +1,8 @@
-/.vscode
+# IDEs and editors
+.settings/
+.vscode/settings.json   -- Line I added that "was not working"
+...
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json  -- Line discovered that was overriding above (REMOVE)
