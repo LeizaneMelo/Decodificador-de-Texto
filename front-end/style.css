@@ -72,7 +72,7 @@ body {
     
 }
 ::placeholder{
-    color: #0A3871;
+    color: #6153df;
     font-family: Inter, sans-serif;
     font-size: 30px;
     font-weight: bolder;
@@ -80,33 +80,33 @@ body {
 
 .botao {
     background: #fffdfd;
-    color: #0A3871;
+    color: #6153df;
     margin: 52px 160px;
 
 }
 .botao1 {
-    background: #0A3871;
+    background: #6153df;
     color: #f0eded;
 }
 .botao2 {
     background: #fffdfd;
-    color: #0A3871;
+    color: #6153df;
 }
 
 .botao1:hover {
     background-color: #fffdfd;
-    color: #0A3871;
+    color: #6153df;
     transform: scale(1.1);
     transition-duration: 0.9s;
 }
 .botao2:hover {
-    background-color: #0A3871;
+    background-color: #6153df;
     color: #fffdfd;
     transform: scale(1.1);
     transition-duration: 0.9s;
 }
 .botao:hover {
-    background-color: #0A3871;
+    background-color: #6153df;
     color: #fffdfd;
     transform: scale(1.2);
     transition-duration: 0.9s;
@@ -184,7 +184,7 @@ h5{
 footer {
     text-align: center;
     color: #FFFFFF;
-    background: #0A3871;
+    background: #6153df;
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -204,7 +204,7 @@ footer {
 }
 .alert-symbol {
     font-size: 14px;
-    color: #0A3871;
+    color: #6153df;
     margin-right: 10px;
 }
 
